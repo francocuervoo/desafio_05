@@ -1,0 +1,15 @@
+html 
+    head 
+        title Detalles producto
+        include ./partials/menu   
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")           
+        link(rel="stylesheet" href="./styles.css")  
+    body
+        div(class="card" style="width: 18rem")
+            img(class="card-img-top" src=`${productoById.thumbnail}` alt=`${productoById.title}`)
+            div(class="card-body")
+                h5(class="card-title")=`Nombre: ${productoById.title}`
+                p(class="card-text")=`id :${productoById.id}`
+                p(class="card-text")=`Precio :${productoById.price}`
+
+        

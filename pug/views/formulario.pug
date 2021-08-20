@@ -1,0 +1,22 @@
+html
+    head
+        title Crear producto
+        include ./partials/menu   
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")           
+        link(rel="stylesheet" href="./styles.css")  
+    body
+        h1(class="p-4") Ingrese el producto
+        form(id="formulario" method="POST" action="/pug/productos")
+            div(class="form-group p-4")
+                label(for="title") Nombre del producto
+                input(type="text" name="title" id="title" class="form-control" placeholder="Producto" required) 
+                br
+                label(for="price") Precio del producto
+                input(type="number" name="price" id="price" class="form-control" placeholder="Precio" required) 
+                br
+                label(for="thumbnail") Precio del producto
+                input(type="url" name="thumbnail" id="thumbnail" class="form-control" placeholder="Imagen URL" required) 
+                br
+                button(class="btn btn-primary" type="submit" value="Enviar") Subir producto
+              
+

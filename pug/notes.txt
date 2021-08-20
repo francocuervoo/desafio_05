@@ -1,0 +1,12 @@
+El formulario es solo para cargar productos a la lista
+No es necesario que tenga la opción de modificación de productos ya existentes
+
+No es necesario usar Multer
+
+Incorporar el Router de express en la url base '/api/productos' y configurar todas las subrutas en base a este.
+
+Crear un espacio público de servidor que contenga un documento index.html con un formulario de ingreso de productos con los datos apropiados.
+
+
+Agregar Router (pag 101) y adaptar el formulario html 3:02:00 / Pag 58
+El put es la parte más difícil, crear un nuevo método dentro de la clase Contenedor -> updateById
