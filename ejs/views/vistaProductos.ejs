@@ -34,7 +34,7 @@
 
         <div class="p-4">
             <p class="h3">Vista de productos</p> 
-            <% #if (lista.length < 1) { %>
+            <% if(lista.length < 1){ %>
                 <table class="table">
                     <thead>
                         <tr>
@@ -63,14 +63,14 @@
                     <tbody>
                         <% lista.forEach(function(list){ %>       
                         <tr>
-                            <td> <%= list.title %> </td>
-                            <td> <%= list.price %> </td>
-                            <td> <img style="width: 2rem;" src="<%= list.thumbnail %>"> </td>
+                            <td> <%=list.title%> </td>
+                            <td> <%=list.price%> </td>
+                            <td> <img style="width: 2rem;" src="<%=list.thumbnail%>"> </td>
                         </tr>
                         <% }) %>      
                     </tbody>
                 </table>
-            <% }) %> 
+            <% } %> 
         </div>
 
 </body>

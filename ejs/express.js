@@ -10,7 +10,7 @@ const app = express(); // Server app
 app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine", "ejs"); // Seteo el engine que voy a usar y la extension ejs
-app.set("views", "./views"); //Establecemos el directorio donde se encuentran los archivos de la plantilla.
+app.set("views", "./views/"); //Establecemos el directorio donde se encuentran los archivos de la plantilla.
 app.use(express.static("public")); // Static file folder
 
 app.get("/", (req, res) => {
