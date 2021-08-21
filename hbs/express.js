@@ -19,7 +19,6 @@ app.engine( // Configuración del HBS
 );
 
 app.set("view engine", "hbs"); // Seteo el engine que voy a usar y la extension hbs
-app.set("views", "./views"); //Establecemos el directorio donde se encuentran los archivos de la plantilla.
 app.use(express.static("public")); // Static file folder
 
 app.get("/", (req, res) => {
