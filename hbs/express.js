@@ -9,6 +9,8 @@ const express = require("express"); // Import express
 const app = express(); // Server app
 const handlebars = require("express-handlebars");
 
+app.use(express.urlencoded({extended: true})) // Middleware
+
 app.engine( // Configuración del HBS
   ".hbs",
   handlebars({
