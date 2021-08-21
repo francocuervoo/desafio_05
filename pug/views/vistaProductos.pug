@@ -14,40 +14,39 @@ head
     body
 
         nav.navbar.navbar-expand-lg.navbar-light.bg-light
-        a.navbar-brand(href='/') Formulario
-        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-        #navbarSupportedContent.collapse.navbar-collapse
-            ul.navbar-nav.mr-auto
-            li.nav-item
-                a.nav-link(href='/productos') Lista de Productos
-
+            a.navbar-brand(href='/') Formulario
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item
+                        a.nav-link(href='/productos') Lista de Productos
 
         .p-4
             p.h3 Vista de productos
                 if lista.length < 1
                     table.table
                         thead
-                        tr
-                            th(scope='col') Nombre
-                            th(scope='col') Precio
-                            th(scope='col') Imagen
+                            tr
+                                th(scope='col') Nombre
+                                th(scope='col') Precio
+                                th(scope='col') Imagen
                         tbody
-                        tr
-                            td No se encontraron productos
-                            td  
-                            td
+                            tr
+                                td No se encontraron productos
+                                td  
+                                td
                 else
                     table.table
                         thead
-                        tr
-                            th(scope='col') Nombre
-                            th(scope='col') Precio
-                            th(scope='col') Imagen
+                            tr
+                                th(scope='col') Nombre
+                                th(scope='col') Precio
+                                th(scope='col') Imagen
                         tbody
-                        each lista in list        
-                        tr
-                            td  #{list.title } 
-                            td  #{list.price } 
-                            td
-                            img(style='width: 2rem;' src='list.thumbnail')        
+                            each list in lista
+                                tr
+                                    td  #{ list.title } 
+                                    td  #{ list.price } 
+                                    td
+                                        img(style='width: 2rem;' src=list.thumbnail)        
