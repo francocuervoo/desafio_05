@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS y Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Desafío Clase 5</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Formulario</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/productos">Lista de Productos</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="p-4">
+            <p class="h3">Vista de productos</p> 
+            <% #if (lista.length < 1) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>No se encontraron productos</td>
+                            <td> </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <% } else { %>                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% lista.forEach(function(list){ %>       
+                        <tr>
+                            <td> <%= list.title %> </td>
+                            <td> <%= list.price %> </td>
+                            <td> <img style="width: 2rem;" src="<%= list.thumbnail %>"> </td>
+                        </tr>
+                        <% }) %>      
+                    </tbody>
+                </table>
+            <% }) %> 
+        </div>
+
+</body>
+
+</html>

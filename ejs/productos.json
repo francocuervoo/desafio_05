@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Microondas",
+    "price": 40000,
+    "thumbnail": "https://ichef.bbci.co.uk/news/640/cpsprodpb/183B1/production/_113494299_gettyimages-489937746.jpg",
+    "id": 1
+  },
+  {
+    "title": "Mesa",
+    "price": 90000,
+    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_890873-MLA41353929943_042020-O.jpg",
+    "id": 2
+  },
+  {
+    "title": "Sillón",
+    "price": 12000,
+    "thumbnail": "https://static5.depositphotos.com/1013017/414/v/600/depositphotos_4143934-stock-illustration-isolated-colored-armchair.jpg",
+    "id": 3
+  },
+  {
+    "title": "Heladera",
+    "price": 80000,
+    "thumbnail": "https://www.lg.com/ar/images/heladeras/md06231456/350_basic.jpg",
+    "id": 4
+  },
+  {
+    "title": "Lavarropas",
+    "price": 60000,
+    "thumbnail": "https://www.juarezconfort.com.ar/static/productos/22250_202008221053380775_gde.jpg",
+    "id": 5
+  },
+  {
+    "title": "test1988",
+    "price": "20000",
+    "thumbnail": "https://www.google.com",
+    "id": 6
+  },
+  {
+    "title": "test",
+    "price": "20000",
+    "thumbnail": "https://www.google.com",
+    "id": 7
+  },
+  {
+    "title": "test198AAA",
+    "price": "44444444",
+    "thumbnail": "https://www.google.com",
+    "id": 8
+  },
+  {
+    "title": "test208",
+    "price": "2000",
+    "thumbnail": "https://www.google.com",
+    "id": 9
+  },
+  {
+    "title": "test208B",
+    "price": "20000",
+    "thumbnail": "https://www.google.com",
+    "id": 10
+  },
+  {
+    "title": "pelo",
+    "price": "2000",
+    "thumbnail": "https://image.flaticon.com/icons/png/512/1099/1099672.png",
+    "id": 11
+  },
+  {
+    "title": "Pelota",
+    "price": "20000",
+    "thumbnail": "https://image.flaticon.com/icons/png/512/1099/1099672.png",
+    "id": 12
+  }
+]
