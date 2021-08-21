@@ -1,0 +1,22 @@
+<form class="p-4" id="formulario" method="POST" action="/productos">
+  <p class="h3" >Ingrese producto</p>    
+  <div class="form-group">
+    <label>Nombre del producto</label>
+    <input class="form-control" type="text" name="title" id="title" placeholder="Nombre" required><br>
+    <label>Precio del producto</label>
+    <input class="form-control" type="number" name="price" id="price" placeholder="Precio" required><br>
+    <label>Imagen del producto</label>
+    <input class="form-control" type="url" name="thumbnail" id="thumbnail" placeholder="URL imagen" required><br>
+  </div>
+  <button type="submit" class="btn btn-primary">Subir producto</button>
+</form>
+
+<script>
+
+    document.getElementById("formulario").onsubmit = () => {
+        let titulo = document.getElementById("title").value;
+        let precio = document.getElementById("price").value;
+        alert("Nuevo producto agregado \n Título: " + titulo + "\n Precio: $" + precio)
+    }
+
+</script>

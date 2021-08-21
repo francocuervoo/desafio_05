@@ -1,0 +1,40 @@
+<div class="p-4">
+    <p class="h3">Vista de productos</p> 
+    {{#if lista}}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista as |list| }}        
+            <tr>
+                <td> {{ list.title }} </td>
+                <td> {{ list.price }} </td>
+                <td> <img style="width: 2rem;" src="{{ list.thumbnail }}"> </td>
+            </tr>
+            {{/each}}        
+        </tbody>
+    </table>
+    {{ else }}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>No se encontraron productos</td>
+                <td> </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    {{/if}}
+</div>
