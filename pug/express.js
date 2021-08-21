@@ -10,6 +10,8 @@ const app = express(); // Server app
 app.set("views", "./views/"); // Establish directory where the files are located
 app.set("view engine", "pug"); // Motor pug
 
+app.use(express.urlencoded({extended: true})) // Middleware
+
 app.use(express.static("public")); // Static file folder
 
 app.post("/productos", async (req, res) => {
